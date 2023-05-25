@@ -1,0 +1,37 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+    
+  }
+  
+  mat-table {
+    overflow: auto;
+    max-height: 500px;
+    background-color: rgb(205, 177, 191);
+  }
+  /* .user{
+border: 2px solid black;
+
+  }
+  .battery{
+border: 2px solid black;
+
+  } */
+  .checked{
+    color:rgb(5, 235, 17);
+  }
+  .crossbutton{
+    width:15px;
+    height: 10px;
+  }
+  .user_management{
+    margin: 20px; 
+     justify-items: center; 
+    
+  }
+  #user{
+    text-align: center;
+    /* background-color: darkorange; */
+    }

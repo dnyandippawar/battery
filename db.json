@@ -1,0 +1,167 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "name": "rajesh",
+      "passward": "4444",
+      "email": "govinda@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "dnyandip pawar",
+      "passward": "Pawar123",
+      "email": "dnyandip@portfolio",
+      "id": 2
+    },
+    {
+      "name": "dnyandip pawar",
+      "passward": "1234",
+      "email": "pawardnyandip01999@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "dnyandip pawar",
+      "new_passward": "552555",
+      "repassward": "885252",
+      "mob_number": 2525525522,
+      "email": "dnyandip@portfolio",
+      "id": 4
+    },
+    {
+      "name": "rajesh",
+      "new_passward": "4444",
+      "repassward": "",
+      "mob_number": 2525525522,
+      "email": "govinda@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "vijay chavan",
+      "passward": "Vijay123",
+      "mob_number": 2525525522,
+      "email": "bachhan@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "",
+      "passward": "",
+      "email": "",
+      "id": 7
+    },
+    {
+      "name": "vijay chavan",
+      "passward": "4567",
+      "mob_number": 2525525522,
+      "email": "bachhan@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "maratha",
+      "passward": "5254",
+      "mob_number": 52223523235,
+      "email": "pawar925@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "banjara",
+      "passward": "2525",
+      "mob_number": "1515515522",
+      "email": "a@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "dnyandip pawar",
+      "passward": "1234",
+      "mob_number": "8668975238",
+      "email": "pawardnyandip01999@gmail.com",
+      "Rating": 11
+    }
+  ],
+  "tabledata": [
+    {
+      "User_Detail":{ "Name":"adil", "id":"1"},
+      "Location": "pune",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "nickel-meta",
+      "Action": "pending",
+      "Rating": 1
+    },
+    {
+      "User_Detail":{ "Name":"ajay", "id":"22"},
+      "Location": "mumbai",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "lithium ion",
+      "Action": "pending",
+      "Rating": 2
+    },
+    {
+      "User_Detail": { "Name":"balu", "id":"13"},
+      "Location": "devla",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "lithoim ",
+      "Action": "pending",
+      "Rating": 3
+    },
+    {
+      "User_Detail":{ "Name":"vijay", "id":"14"},
+      "Location": "nashik",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "lithium ion",
+      "Action": "pending",
+      "Rating": 14
+    },
+    {
+      "User_Detail": { "Name":"narayan", "id":"15"},
+      "Location": "ambajogai",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "acid",
+      "Action": "pending",
+      "Rating": 5
+    },
+    {
+      "User_Detail": { "Name":"vishal", "id":"16"},
+      "Location": "sambhajinagar",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "lithium",
+      "Action": "pending",
+      "Rating": 6
+    },
+    {
+      "User_Detail": { "Name":"adil", "id":"17"},
+      "Location": "sangli",
+      "Battery_Details": {"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Action": "pending",
+      "Rating": 7
+    },
+    {
+      "User_Detail": { "Name":"gadil", "id":"18"},
+      "Location": "nagpur",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "lithium ion",
+      "Action": "pending",
+      "Rating": 8
+    },
+    {
+      "User_Detail": { "Name":"diler", "id":"19"},
+      "Location": "pune",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "lead -acid",
+      "Action": "pending",
+      "Rating": 9
+    },
+    {
+      "User_Detail": { "Name":"vfnadil", "id":"5"},
+      "Location": "sonari",
+      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "order_details": "nickel-meta",
+      "Action": "pending",
+      "Rating": 10
+    }
+  ]
+}

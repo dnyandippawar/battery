@@ -1,0 +1,28 @@
+
+
+<div class="loginsign">
+  <div >
+    <h2 style="font-size: 30px; padding: 15px; background-color: blueviolet; color: white; box-shadow: 5px 5px 5px 5px grey;">LOGIN</h2>
+      
+      <form class="example-form" #logindata="ngForm" (ngSubmit)="loginform(logindata.value)">
+        <mat-form-field class="example-full-width">
+          <mat-label>Full name</mat-label>
+          <input matInput type="text" placeholder="name" required #name="ngModel" ngModel name="name" value="enter name">
+       <br><span class="valid" *ngIf="name.invalid && name.touched "></span>
+        </mat-form-field>
+    <br>
+        <mat-form-field class="example-full-width">
+          <mat-label>Passward</mat-label>
+          <input matInput  type="password" placeholder="passward" required #passward="ngModel" minlength="6" maxlength="15" pattern="[A-Z].*" ngModel name="passward" value="enter passward">
+          <br><span class="valid" *ngIf="passward.invalid && passward.touched "></span>
+        </mat-form-field>
+     <br>
+        <button class="login" [disabled]="logindata.invalid">LogIn</button>
+      </form>
+<!-- </div> -->
+<br><br>
+ <button><a routerLink="/forget" routerLinkActive="active">forget passward</a></button> 
+<br>
+   <button> <a routerLink="/signuppage" routerLinkActive="active">user not exist ? create signup</a></button>
+   </div>
+<router-outlet></router-outlet>

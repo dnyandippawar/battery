@@ -1,0 +1,19 @@
+<div class="loginsign">
+    <h2
+        style="font-size: 30px; padding: 15px; background-color: blueviolet; color: white; box-shadow: 5px 5px 5px 5px grey;">
+        Passward reset</h2>
+    <div>
+        <p style="font-size: 20px;"> enter your new passward </p>
+        <form class="example-form" #newpass="ngForm" (ngSubmit)="passwardform(newpass.value)">
+
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>new passward</mat-label>
+                <input matInput type="text" placeholder="new passward" required #newpassward="ngModel" ngModel
+                    name="newpassward" value="enter passward">
+                <br><span class="valid" *ngIf="newpassward.invalid && newpassward.touched "></span>
+            </mat-form-field>
+            <br>
+            <button class="login" [disabled]="newpassward.invalid">Reset Passward</button>
+        </form>
+    </div>

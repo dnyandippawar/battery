@@ -1,0 +1,42 @@
+
+
+
+<div class="loginsign" >
+  <div>
+  <h2 style="font-size: 30px; padding: 15px; background-color: blueviolet; color:white;  box-shadow: 5px 5px 5px 5px grey;">SIGNUP</h2>
+  
+  <form class="example-form" #data="ngForm" (ngSubmit)="signupform(data.value)">
+    <mat-form-field class="example-full-width">
+      <mat-label>Full name</mat-label>
+      <input matInput type="text" placeholder="name"required #name="ngModel" ngModel name="name" value="enter your name">
+      <br><span class="valid" *ngIf="name.invalid && name.touched "></span>
+    </mat-form-field>
+<br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Passward</mat-label>
+      <input matInput type="password" placeholder="passward" required #passward="ngModel" minlength="6" maxlength="15" pattern="[A-Z]" ngModel name="passward" value="enter your name">
+      <br><span class="valid" *ngIf="passward.invalid && passward.touched "></span>
+    </mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <mat-label>Mobile number</mat-label>
+<input matInput  type="text" required #mob_number="ngModel" ngModel name="mob_number" [minlength]="10" [maxlength]="10" placeholder=" mobile number">
+<br> <span class="valid" *ngIf="mob_number.invalid && mob_number.touched" ></span>
+</mat-form-field>
+<br>   
+<mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" placeholder="email" required #email="ngModel" ngModel name="email" [email]="true" value="enter your name">
+    <br><span class="valid" *ngIf="email.invalid && email.touched "></span>
+    </mat-form-field>
+    <br>
+    <button class="login" [disabled]="data.invalid">SignUp</button>
+  </form></div>
+<br><br>
+  <button>
+    <a routerLink="/login" routerLinkActive="active">user already signup ? login click here</a>
+    </button>
+</div>
+
+
+  

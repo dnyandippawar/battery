@@ -1,0 +1,38 @@
+<div class="loginsign">
+    <div>
+        <h2
+            style="font-size: 30px; padding: 15px; background-color: blueviolet; color: white; box-shadow: 5px 5px 5px 5px grey;">
+            Passward reset</h2>
+        <div *ngIf="a1">
+            <p style="font-size: 20px;">Please enter your email to request passward reset</p>
+            <form class="example-form" #email="ngForm" (ngSubmit)="emailform(email.value)">
+
+                <br>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" placeholder="email" required #email="ngModel" ngModel name="email" [email]="true"
+                        value="enter email">
+                    <br><span class="valid" *ngIf="email.invalid && email.touched "></span>
+                </mat-form-field>
+                <br>
+                <button class="login" [disabled]="email.invalid">Click</button>
+            </form>
+        </div>
+
+
+        <div *ngIf="a2">
+            <p>please enter your email sent OTP</p>
+            <form class="example-form" #otp="ngForm" (ngSubmit)="OTPform(otp.value)">
+
+                <br>
+                <mat-form-field class="example-full-width">
+                    <mat-label>OTP</mat-label>
+                    <input matInput type="OTP" placeholder="email OTP" required #otp="ngModel" ngModel name="otp" maxlength="6" minlength="6"  value="enter OTP">
+                    <br><span class="valid" *ngIf="otp.invalid && otp.touched "></span>
+                </mat-form-field>
+                <br>
+            <button class="login" [disabled]="otp.invalid">CLICK </button>
+            </form> <br>
+            {{wrongotp}} <br>
+        </div>
+    </div>
