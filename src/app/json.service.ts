@@ -18,7 +18,7 @@ export class JsonService {
  url2 = "http://localhost:3000/newpass";
  url3 = "http://localhost:3000/otp";
  url4 = "http://localhost:3000/otpget";
- apiurl = "http://localhost:3000/tabledata"
+ apiurl = "http://localhost:3000/tabledata";
   getdata( ){
       return this.http.get("http://localhost:3000/users");
     

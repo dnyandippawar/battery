@@ -9,29 +9,29 @@
       <!-- user Column -->
       <ng-container matColumnDef="User_Detail">
         <mat-header-cell  *matHeaderCellDef> User Details </mat-header-cell>
-        <mat-cell *matCellDef="let element; index as i "><span  class="user"> {{element.User_Detail.Name}} <br> {{element.User_Detail.id}} </span></mat-cell>
+        <mat-cell *matCellDef="let element "><span  class="user"> {{element.User_Detail.Name}} <br> {{element.User_Detail.id}} </span></mat-cell>
 
       </ng-container>
 
       <!-- location Column -->
       <ng-container matColumnDef="Location">
         <mat-header-cell mat-sort-header *matHeaderCellDef> Location </mat-header-cell>
-        <mat-cell *matCellDef="let element; index as i "> {{element.Location}} </mat-cell>
+        <mat-cell *matCellDef="let element "> {{element.Location}} </mat-cell>
       </ng-container>
 
       <!-- battery Column -->
       <ng-container matColumnDef="Battery_Details">
         <mat-header-cell  *matHeaderCellDef> Battery_Details </mat-header-cell>
-        <mat-cell *matCellDef="let element; index as i "> <span class="battery">{{element.Battery_Details.Vehicle_Type}} <br>
+        <mat-cell *matCellDef="let element"> <span class="battery">{{element.Battery_Details.Vehicle_Type}} <br>
           {{element.Battery_Details.Battery_Percent}} <br> {{element.Battery_Details.Battery_id}}</span> </mat-cell>
       </ng-container>
 
       <!-- action coloumn -->
-      <ng-container matColumnDef="Action">
+      <ng-container matColumnDef="id">
         <mat-header-cell  *matHeaderCellDef> Action </mat-header-cell>
         <!-- <mat-cell *matCellDef="let element"> {{element.Action}} </mat-cell> -->
-        <mat-cell *matCellDef="let element; index as i ">
-          <button (click)="crossbutton(i)">
+        <mat-cell *matCellDef="let element">
+          <button (click)="crossbutton(element)">
             <img class="crossbutton" src="https://www.kindpng.com/picc/m/504-5042965_close-wrong-cross-black-png-transparent-png.png" alt="cross button"></button>
            <button (click)="button()" ><img class="crossbutton" src="https://www.pngmart.com/files/17/Wrong-Cross-PNG-Clipart.png" alt="button"></button>  </mat-cell>
       </ng-container>
@@ -39,7 +39,7 @@
       <!-- rating coloumn -->
       <ng-container matColumnDef="Rating">
         <mat-header-cell mat-sort-header *matHeaderCellDef> Rating</mat-header-cell>
-        <mat-cell *matCellDef="let element; index as i ">
+        <mat-cell >
 
           <mat-icon *ngFor="let star of maxRatingArr; let index = index"
             (mouseenter)="handlemouseenter(index)"

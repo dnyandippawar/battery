@@ -80,7 +80,8 @@
       "passward": "1234",
       "mob_number": "8668975238",
       "email": "pawardnyandip01999@gmail.com",
-      "Rating": 11
+      "Rating":"4",
+      "id":11
     }
   ],
   "tabledata": [
@@ -89,79 +90,79 @@
       "Location": "pune",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "nickel-meta",
-      "Action": "pending",
-      "Rating": 1
+      "Rating":"4",
+      "id": 1
     },
     {
       "User_Detail":{ "Name":"ajay", "id":"22"},
       "Location": "mumbai",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "lithium ion",
-      "Action": "pending",
-      "Rating": 2
+      "Rating":"4",
+      "id": 2
     },
     {
       "User_Detail": { "Name":"balu", "id":"13"},
       "Location": "devla",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "lithoim ",
-      "Action": "pending",
-      "Rating": 3
+      "Rating":"4",
+      "id": 3
     },
     {
       "User_Detail":{ "Name":"vijay", "id":"14"},
       "Location": "nashik",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "lithium ion",
-      "Action": "pending",
-      "Rating": 14
+      "Rating":"4",
+      "id": 14
     },
     {
       "User_Detail": { "Name":"narayan", "id":"15"},
       "Location": "ambajogai",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "acid",
-      "Action": "pending",
-      "Rating": 5
+      "Rating":"4",
+      "id": 5
     },
     {
       "User_Detail": { "Name":"vishal", "id":"16"},
       "Location": "sambhajinagar",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "lithium",
-      "Action": "pending",
-      "Rating": 6
+      "Rating":"4",
+      "id": 6
     },
     {
       "User_Detail": { "Name":"adil", "id":"17"},
       "Location": "sangli",
       "Battery_Details": {"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
-      "Action": "pending",
-      "Rating": 7
+      "Rating":"4",
+      "id": 7
     },
     {
       "User_Detail": { "Name":"gadil", "id":"18"},
       "Location": "nagpur",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "lithium ion",
-      "Action": "pending",
-      "Rating": 8
+      "Rating":"4",
+      "id": 8
     },
     {
       "User_Detail": { "Name":"diler", "id":"19"},
       "Location": "pune",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "lead -acid",
-      "Action": "pending",
-      "Rating": 9
+      "Rating":"4",
+      "id": 9
     },
     {
       "User_Detail": { "Name":"vfnadil", "id":"5"},
       "Location": "sonari",
       "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
       "order_details": "nickel-meta",
-      "Action": "pending",
-      "Rating": 10
+      "Rating":"4",
+      "id": 10
     }
   ]
 }
