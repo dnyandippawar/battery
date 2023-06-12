@@ -80,89 +80,160 @@
       "passward": "1234",
       "mob_number": "8668975238",
       "email": "pawardnyandip01999@gmail.com",
-      "Rating":"4",
-      "id":11
+      "Rating": "4",
+      "id": 11
     }
   ],
   "tabledata": [
     {
-      "User_Detail":{ "Name":"adil", "id":"1"},
+      "User_Detail": {
+        "Name": "adil",
+        "id": "1"
+      },
       "Location": "pune",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "nickel-meta",
-      "Rating":"4",
+      "Rating": 3,
       "id": 1
     },
     {
-      "User_Detail":{ "Name":"ajay", "id":"22"},
+      "User_Detail": {
+        "Name": "ajay",
+        "id": "22"
+      },
       "Location": "mumbai",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "lithium ion",
-      "Rating":"4",
+      "Rating": 4,
       "id": 2
     },
     {
-      "User_Detail": { "Name":"balu", "id":"13"},
+      "User_Detail": {
+        "Name": "balu",
+        "id": "13"
+      },
       "Location": "devla",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "lithoim ",
-      "Rating":"4",
+      "Rating": 5,
       "id": 3
     },
     {
-      "User_Detail":{ "Name":"vijay", "id":"14"},
+      "User_Detail": {
+        "Name": "vijay",
+        "id": "14"
+      },
       "Location": "nashik",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "lithium ion",
-      "Rating":"4",
+      "Rating": 4,
       "id": 14
     },
     {
-      "User_Detail": { "Name":"narayan", "id":"15"},
+      "User_Detail": {
+        "Name": "narayan",
+        "id": "15"
+      },
       "Location": "ambajogai",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "acid",
-      "Rating":"4",
+      "Rating": 2,
       "id": 5
     },
     {
-      "User_Detail": { "Name":"vishal", "id":"16"},
+      "User_Detail": {
+        "Name": "vishal",
+        "id": "16"
+      },
       "Location": "sambhajinagar",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "lithium",
-      "Rating":"4",
+      "Rating": 1,
       "id": 6
     },
     {
-      "User_Detail": { "Name":"adil", "id":"17"},
+      "User_Detail": {
+        "Name": "adil",
+        "id": "17"
+      },
       "Location": "sangli",
-      "Battery_Details": {"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
-      "Rating":"4",
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
+      "Rating": 0,
       "id": 7
     },
     {
-      "User_Detail": { "Name":"gadil", "id":"18"},
+      "User_Detail": {
+        "Name": "gadil",
+        "id": "18"
+      },
       "Location": "nagpur",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "lithium ion",
-      "Rating":"4",
+      "Rating": 4,
       "id": 8
     },
     {
-      "User_Detail": { "Name":"diler", "id":"19"},
+      "User_Detail": {
+        "Name": "diler",
+        "id": "19"
+      },
       "Location": "pune",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "lead -acid",
-      "Rating":"4",
+      "Rating": 2,
       "id": 9
     },
     {
-      "User_Detail": { "Name":"vfnadil", "id":"5"},
+      "User_Detail": {
+        "Name": "vfnadil",
+        "id": "5"
+      },
       "Location": "sonari",
-      "Battery_Details":{"Vehicle_Type":"2 wheeler","Battery_Percent":"60%","Battery_id":"15321"},
+      "Battery_Details": {
+        "Vehicle_Type": "2 wheeler",
+        "Battery_Percent": "60",
+        "Battery_id": "15321"
+      },
       "order_details": "nickel-meta",
-      "Rating":"4",
+      "Rating": 4,
       "id": 10
     }
+    
   ]
 }

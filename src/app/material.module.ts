@@ -9,9 +9,10 @@ import { MatIconModule} from "@angular/material/icon";
         MatTableModule,
         MatPaginatorModule,
         MatSortModule,
-       MatIconModule
-    
-    ]
+       MatIconModule,
+     
+    ],
+
 })
 export class MaterialModule{
 

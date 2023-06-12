@@ -19,6 +19,7 @@ export class JsonService {
  url3 = "http://localhost:3000/otp";
  url4 = "http://localhost:3000/otpget";
  apiurl = "http://localhost:3000/tabledata";
+//  rating = "http://localhost:3000/tabledata";
   getdata( ){
       return this.http.get("http://localhost:3000/users");
     
@@ -56,4 +57,12 @@ otpget(){
   gettabledata():Observable<Element>{
 return this.http.get<Element>(this.apiurl);
   }
+
+
+  postrating(Rating:number){
+    return this.http.post(this.apiurl, {Rating});
+  
+  }
+
 }
+

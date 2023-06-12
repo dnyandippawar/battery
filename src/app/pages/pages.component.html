@@ -1,62 +1,52 @@
-<div class="user_management" >
-  <h2 id="user" ><span style="background-color: orangered;"> USER MANAGEMENT </span></h2>
+<div class="user_management">
+  <h2 id="user"><span style="background-color: orangered;"> USER MANAGEMENT </span></h2>
   <div class="example-container mat-elevation-z8">
-    <mat-table #table matSort [dataSource]="dataSource" >
+    <table mat-table #table [dataSource]="dataSource" matSort>
 
-      <!--- Note that these columns can be defined in any order.
-            The actual rendered columns are set as a property on the row definition" -->
-
-      <!-- user Column -->
+      <!-- User Column -->
       <ng-container matColumnDef="User_Detail">
-        <mat-header-cell  *matHeaderCellDef> User Details </mat-header-cell>
-        <mat-cell *matCellDef="let element "><span  class="user"> {{element.User_Detail.Name}} <br> {{element.User_Detail.id}} </span></mat-cell>
-
+        <th mat-header-cell *matHeaderCellDef> User Details </th>
+        <td mat-cell *matCellDef="let element">{{ element.User_Detail?.Name }} <br>{{ element.User_Detail.id }}</td>
       </ng-container>
 
-      <!-- location Column -->
+      <!-- Location Column -->
       <ng-container matColumnDef="Location">
-        <mat-header-cell mat-sort-header *matHeaderCellDef> Location </mat-header-cell>
-        <mat-cell *matCellDef="let element "> {{element.Location}} </mat-cell>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Location </th>
+        <td mat-cell *matCellDef="let element">{{ element.Location }}</td>
       </ng-container>
 
-      <!-- battery Column -->
+      <!-- Battery Column -->
       <ng-container matColumnDef="Battery_Details">
-        <mat-header-cell  *matHeaderCellDef> Battery_Details </mat-header-cell>
-        <mat-cell *matCellDef="let element"> <span class="battery">{{element.Battery_Details.Vehicle_Type}} <br>
-          {{element.Battery_Details.Battery_Percent}} <br> {{element.Battery_Details.Battery_id}}</span> </mat-cell>
+        <th mat-header-cell *matHeaderCellDef> Battery Details </th>
+        <td mat-cell *matCellDef="let element">{{ element.Battery_Details?.Vehicle_Type }} <br>
+          {{ element.Battery_Details?.Battery_Percent }} <br> {{ element.Battery_Details?.Battery_id }}</td>
       </ng-container>
 
-      <!-- action coloumn -->
+      <!-- Action Column -->
       <ng-container matColumnDef="id">
-        <mat-header-cell  *matHeaderCellDef> Action </mat-header-cell>
-        <!-- <mat-cell *matCellDef="let element"> {{element.Action}} </mat-cell> -->
-        <mat-cell *matCellDef="let element">
-          <button (click)="crossbutton(element)">
-            <img class="crossbutton" src="https://www.kindpng.com/picc/m/504-5042965_close-wrong-cross-black-png-transparent-png.png" alt="cross button"></button>
-           <button (click)="button()" ><img class="crossbutton" src="https://www.pngmart.com/files/17/Wrong-Cross-PNG-Clipart.png" alt="button"></button>  </mat-cell>
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <td mat-cell *matCellDef="let element">
+          <button (click)="crossbutton(element)"><mat-icon>delete</mat-icon></button>
+          <button (click)="button()"><mat-icon>edit</mat-icon></button>
+        </td>
       </ng-container>
 
-      <!-- rating coloumn -->
+
       <ng-container matColumnDef="Rating">
-        <mat-header-cell mat-sort-header *matHeaderCellDef> Rating</mat-header-cell>
-        <mat-cell >
-
-          <mat-icon *ngFor="let star of maxRatingArr; let index = index"
-            (mouseenter)="handlemouseenter(index)"
-            (mouseleave)="handlemouseleave()" 
-            (click)="Rating(index)"
-            [ngClass]="{checked:selectedstar > index}"
-            > star</mat-icon>
-          
-  
-          
-        </mat-cell>
+        <th mat-header-cell *matHeaderCellDef>Rating</th>
+        <td mat-cell *matCellDef="let element">
+          <mat-icon *ngFor="let icon of maxRatingArr; let i = index" (click)="setRating(element, i)" class="star-icon"
+             [ngClass]="{'star-filled': i < element.Rating, 'star-empty': i >= element.Rating}">
+            star
+          </mat-icon>
+        </td>
       </ng-container>
 
-      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    </mat-table>
 
-    <mat-paginator [pageSizeOptions]="[5,10,15]" showFirstLastButtons></mat-paginator>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
   </div>
 </div>
