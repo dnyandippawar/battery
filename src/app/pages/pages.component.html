@@ -26,28 +26,21 @@
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef> Action </th>
         <td mat-cell *matCellDef="let element">
-          <button (click)="crossbutton(element)">Delete</button>
-          <button (click)="button()">Edit</button>
+          <button (click)="crossbutton(element)"><mat-icon>delete</mat-icon></button>
+          <button (click)="button()"><mat-icon>edit</mat-icon></button>
         </td>
       </ng-container>
 
 
       <ng-container matColumnDef="Rating">
-        <th mat-header-cell *matHeaderCellDef> Rating </th>
-        <td  mat-cell    *matCellDef="let element">
-          <mat-icon
-          *ngFor="let icon of maxRatingArr; let index = index"
-          (mouseleave)="HandleMouseLeave()"
-          (click)="Rating(index )"
-          [ngClass]="{checked:selectedstar>index}"
-      
-         
-          >star</mat-icon>
-        
+        <th mat-header-cell *matHeaderCellDef>Rating</th>
+        <td mat-cell *matCellDef="let element">
+          <mat-icon *ngFor="let icon of maxRatingArr; let i = index" (click)="setRating(element, i)" class="star-icon"
+             [ngClass]="{'star-filled': i < element.Rating, 'star-empty': i >= element.Rating}">
+            star
+          </mat-icon>
         </td>
       </ng-container>
-
-
 
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

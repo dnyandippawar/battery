@@ -97,7 +97,7 @@
         "Battery_id": "15321"
       },
       "order_details": "nickel-meta",
-      "Rating": 4,
+      "Rating": 3,
       "id": 1
     },
     {
@@ -127,7 +127,7 @@
         "Battery_id": "15321"
       },
       "order_details": "lithoim ",
-      "Rating": 4,
+      "Rating": 5,
       "id": 3
     },
     {
@@ -157,7 +157,7 @@
         "Battery_id": "15321"
       },
       "order_details": "acid",
-      "Rating": 4,
+      "Rating": 2,
       "id": 5
     },
     {
@@ -172,7 +172,7 @@
         "Battery_id": "15321"
       },
       "order_details": "lithium",
-      "Rating": 4,
+      "Rating": 1,
       "id": 6
     },
     {
@@ -186,7 +186,7 @@
         "Battery_Percent": "60",
         "Battery_id": "15321"
       },
-      "Rating": 4,
+      "Rating": 0,
       "id": 7
     },
     {
@@ -216,7 +216,7 @@
         "Battery_id": "15321"
       },
       "order_details": "lead -acid",
-      "Rating": 4,
+      "Rating": 2,
       "id": 9
     },
     {
@@ -233,42 +233,7 @@
       "order_details": "nickel-meta",
       "Rating": 4,
       "id": 10
-    },
-    {
-      "Rating": 1,
-      "id": 15
-    },
-    {
-      "Rating": 1,
-      "id": 16
-    },
-    {
-      "Rating": 5,
-      "id": 17
-    },
-    {
-      "Rating": 5,
-      "id": 18
-    },
-    {
-      "Rating": 3,
-      "id": 19
-    },
-    {
-      "Rating": 3,
-      "id": 20
-    },
-    {
-      "Rating": 1,
-      "id": 21
-    },
-    {
-      "Rating": 2,
-      "id": 22
-    },
-    {
-      "Rating": 3,
-      "id": 23
     }
+    
   ]
 }

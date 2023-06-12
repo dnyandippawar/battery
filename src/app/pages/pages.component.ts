@@ -8,7 +8,6 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { DataSource } from '@angular/cdk/collections';
 
 
-
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
@@ -16,7 +15,7 @@ import { DataSource } from '@angular/cdk/collections';
 })
 export class PagesComponent implements OnInit {
   maxRating = 5;
-  maxRatingArr:number[] = [1,2,3,4,5];
+  maxRatingArr:number[] = [];
   selectedstar = 0;
   ratingdata:any ='';
   previousselection:number = this.ratingdata;
@@ -33,7 +32,7 @@ stars: boolean[] = [];
     this.dataSource = new MatTableDataSource<Element>([]);
   }
   ngOnInit() {
-    this.maxRatingArr = Array(this.maxRating).fill(0);
+    // this.maxRatingArr = Array(this.maxRating).fill(this.Rating);
     this.gettable();
 
     // this.service.gettabledata().subscribe((result) => {
@@ -41,9 +40,9 @@ stars: boolean[] = [];
       
         // });
   }
-
   gettable() {
     this.service.gettabledata().subscribe((result: any) => {
+      this.maxRatingArr = Array.from(Array(5).keys()); 
       this.data = result;
       this.dataSource.data = this.data;
         this.dataSource.paginator = this.paginator;
@@ -54,6 +53,22 @@ stars: boolean[] = [];
       // }
     );
   }
+
+  // gettable(): void {
+  //   this.service.gettabledata().subscribe(
+  //     (result: any) => {
+  //       this.Ratings = result.Rating;
+  //       this.maxRatingArr = Array.from(Array(5).keys()); 
+  //       this.data = result;
+  //       this.dataSource.data = this.data;
+  //       this.dataSource.paginator = this.paginator;
+  //       this.dataSource.sort = this.sort;
+  //     },
+  //     (error: any) => {
+  //       console.log('An error occurred:', error);
+  //     }
+  //   );
+  // }
 
   button() {
     console.log("button");
@@ -67,31 +82,29 @@ stars: boolean[] = [];
  
   }
   
-HandleMouseEnter(index:number){
-  this.selectedstar = index+1;
-}
-HandleMouseLeave(){
-  if(this.previousselection!==0)
-  {
-    this.selectedstar = this.previousselection;
-  }
-  else{
-    this.selectedstar = 0;
-  }
-}
+// HandleMouseEnter(index:number){
+//   this.selectedstar = index+1;
+// }
+// HandleMouseLeave(){
+//   if(this.previousselection!==0)
+//   {
+//     this.selectedstar = this.previousselection;
+//   }
+//   else{
+//     this.selectedstar = 0;
+//   }
+// }
 
- Rating(index:number ){
-  
-this.selectedstar = index + 1 ;
 
-this.previousselection = this.selectedstar;
-this.service.postrating(this.previousselection).subscribe(()=>{
-console.log("rating is successfully updated");
-
- }),(error:any) => {
-  console.error('Error saving data:', error);
+setRating(element: any, rating: number) {
+  element.rating = rating + 1;
+  this.selectedstar = element.rating;
+  this.service.postrating(rating).subscribe(result=>{
+    console.log("successfully saved");
+  })
 }
 
- }
+
+
 
 }

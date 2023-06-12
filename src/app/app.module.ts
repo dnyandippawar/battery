@@ -12,10 +12,7 @@ import {MatInputModule} from '@angular/material/input';
 import { ForgetComponent } from './forget/forget.component';
 import { VerifyComponent } from './verify/verify.component';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { SHA256 } from 'crypto-js';
 import { MaterialModule } from './material.module';
-// Import the required functions and modules from uuid
-import { v4 as uuidv4 } from 'uuid';
 import { ChangepasswardComponent } from './changepassward/changepassward.component';
 import { PagesComponent } from './pages/pages.component';
 
@@ -42,7 +39,8 @@ import { PagesComponent } from './pages/pages.component';
     BrowserAnimationsModule,
     MatInputModule,
     AngularFireAuthModule,
-    MaterialModule
+    MaterialModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
